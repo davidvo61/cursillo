@@ -30,7 +30,7 @@
   			
   			
   			
-  			<form method="post" action="candidateSummit.php">
+  			<form method="post" action="php/candidateSummit.php">
 				<ol>
                     <legend>Personal Information:</legend>
 					<li>

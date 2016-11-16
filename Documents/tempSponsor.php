@@ -30,7 +30,7 @@
   			
   			
   			
-  			<form method="post" action="sponsorSummit.php">
+  			<form method="post" action="php/sponsorSummit.php">
 				<ol>
                     <legend>Sponsor Information:</legend>
 					<li>
