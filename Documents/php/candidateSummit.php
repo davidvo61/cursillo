@@ -1,8 +1,8 @@
 <?php
-    $hostname = "127.0.0.1";
-    $username = "root";
-    $password = "Sydneymysql1";
-    $db = "cursilloV5";
+    $hostname = "localhost";
+    $username = "admin91YuBuK";
+    $password = "xYJHmrKbwTrw";
+    $db = "cursilloV6";
     $conn=mysqli_connect($hostname, $username, $password, $db);
         // Check connection
     if ($conn->connect_error) {

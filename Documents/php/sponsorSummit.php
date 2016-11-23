@@ -2,8 +2,11 @@
 <body>
 
 <?php
-    $conn=mysqli_connect("127.0.0.1","root","Sydneymysql1","cursilloV4");
-    // Check connection
+    $hostname = "localhost";
+    $username = "admin91YuBuK";
+    $password = "xYJHmrKbwTrw";
+    $db = "cursilloV6";
+    $conn=mysqli_connect($hostname, $username, $password, $db);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
