@@ -3,7 +3,7 @@
 <html>
 	<head>	
 		<meta charset=utf-8 />
-		<title>Candidate Application</title>
+		<title>Sponsor Application</title>
 		<link rel=stylesheet href=css/style.css type=text/css>
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,6 +34,9 @@
 				<ol>
                     <legend>Sponsor Information:</legend>
 					<li>
+                        Are You Updating Your Information Or Are You Applying For The First Time?<br>
+                        <input type="radio" name="isSponsor" value="Yes" > Updating<br>
+                        <input type="radio" name="isSponsor" value="No"> Applying For The First Time<br>
                         
 						First Name <input name=firstName type=text required autofocus>
                         
@@ -55,10 +58,12 @@
                         
                         Zip <input name=zip type=text required><br>
                         
+                        Name Parish You Belong To <input name=parish type=text required autofocus>
+                        
                         Date You Made Your Weekend 
                         <input name=weekendDate type=date placeholder="Eg. yyyy-mm-dd" required>
                         
-                        <br>Place You Made Your Weekend:<br>
+                        <br><br>Place You Made Your Weekend:<br>
                         Address <input id="longTextBox" name=addressWeekend type=text required ><br>
                         
                         City <input name=cityWeekend type=text required>
