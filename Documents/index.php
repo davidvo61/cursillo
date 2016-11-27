@@ -48,36 +48,37 @@
         
         
         
-        <?php
-            $dbhost = '127.0.0.1';
-            $dbuser = 'root';
-            $dbpass = 'Sydneymysql1';
-
-            $conn = mysql_connect($dbhost, $dbuser, $dbpass);
-
-            if(! $conn ) {
-                die('Could not connect: ' . mysql_error());
-            }
-
-            $sql = 'SELECT * FROM Child';
-            mysql_select_db('cursilloV3');
-            $retval = mysql_query( $sql, $conn );
-
-            if(! $retval ) {
-                die('Could not get data: ' . mysql_error());
-            }
-
-            while($row = mysql_fetch_array($retval, MYSQL_ASSOC)) {
-                echo "Child's first name: {$row['firstName']}  <br> ";
-            }
-
-            echo "Fetched data successfully\n";
-
-            mysql_close($conn);
-        ?>
+ 
         
-        
-        
-        
+<?php
+    $conn=mysqli_connect("127.0.0.1","root","Sydneymysql1","cursilloV5");
+    // Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$retval = mysqli_query($conn, "SELECT * FROM Person WHERE sponsorID = 5;");
+if(! $retval ) {
+    die('Could not get data: ' . mysql_error());
+}
+
+while($row = mysqli_fetch_array($retval, MYSQL_ASSOC)) {
+    echo "name is: {$row['firstName']}  <br> ";
+}
+
+
+
+
+
+
+
+
+
+
+
+$conn->close();
+
+?>
+
 	</body>
 </html>

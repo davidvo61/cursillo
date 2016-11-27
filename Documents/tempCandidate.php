@@ -41,7 +41,7 @@
                        
                         Preferred Name <input name=preferedName type=text required autofocus><br>
                         
-                        Date of Birth <input name=DOB type=text placeholder="Eg. yyyy-mm-dd" required autofocus>
+                        Date of Birth <input name=DOB type=date placeholder="Eg. yyyy-mm-dd" required autofocus>
                         
                         Age <input name=age type=text required autofocus>
                         
@@ -61,6 +61,10 @@
                         
                         Zip <input name=zip type=text required>
                         
+                        <br>Are You Male Or Female?<br>
+                        <input type="radio" name="gender" value="Male" > Male<br>
+                        <input type="radio" name="gender" value="Female"> Female
+                        
                         <br>Are You Catholic?<br>
                         <input type="radio" name="isCatholic" value="Yes" > Yes<br>
                         <input type="radio" name="isCatholic" value="No"> No
@@ -75,36 +79,36 @@
                         
                         <br>Do you receive Eucharist?<br>
                         <input type="radio" name="isRecevingEucharist" value="Yes" > Yes<br>
-                        <input type="radio" name="isRecevingEucharist" value="No"> No
+                        <input type="radio" name="isReceivingEucharist" value="No"> No<br>
                         
-                        <br>Your Marital Status?<br>
-                        <input type="radio" name="maritalStatus" value="Single" > Sigle<br>
-                        <input type="radio" name="maritalStatus" value="Married"> Married<br>
-            
 						Parish's Name <input name=parish type=text required autofocus>
         
                         Pastor's Name <input name=pastor type=text required autofocus>
                 
                         <br>Church And/Or Other Organizations And/Or Ministries To Which You Belong To
-						<br><textarea id="largeTextBox" name=otherOrganization row=5 required></textarea>
+						<br><textarea id="largeTextBox" name=associatedOrganizations row=5 required></textarea>
 					</li>
 					
                     <br><legend><br>Family Member's Information:</legend>
 					<li>
+                        Your Marital Status?<br>
+                        <input type="radio" name="maritalStatus" value="Single" > Sigle<br>
+                        <input type="radio" name="maritalStatus" value="Married"> Married<br>
+            
                         Do You Have a Spouse?<br>
                         <input type="radio" name="hasSpouse" value="Yes"> Yes<br>
                         <input type="radio" name="hasSpouse" value="No" Checked> No<br>
                         
                         <!-- todo: Some of the stuff below will only be visible if hasSpouse is yes -->
-						Spouse's First Name <input name=spouseFisrtName type=text required autofocus>
+						Spouse's First Name <input name=spouseFirstName type=text required autofocus>
                         
-                        Spouse's Last Name <input name=spouseLastName type=text required autofocus>
+                        Spouse's Last Name <input name=spouseLastName type=text required autofocus><br>
                         
                         Spouse's Religion <input name=spouseReligion type=text required autofocus>
                         
                         <br>Has Spouse Attended Cursillo?<br>
-                        <input type="radio" name="attendedCursillo" value="Yes" > Yes<br>
-                        <input type="radio" name="attendedCursillo" value="No"> No<br>
+                        <input type="radio" name="spouseAttendedCursillo" value="Yes" > Yes<br>
+                        <input type="radio" name="spouseAttendedCursillo" value="No"> No<br>
                         
                         <!-- todo: incomplete, need more field and case for multiple children-->
                         Children's Name and Ages<br>
@@ -119,7 +123,7 @@
                         <input type="radio" name="requireLowerBunk" value="No"> No<br>
                         
                         Please List Specific Medical/Dietary Requirements<br>
-						<textarea id="largeTextBox" name=medRequiremets rows=5 required></textarea>
+						<textarea id="largeTextBox" name=medicalRequirements rows=5 required></textarea>
 					</li>
 
                     <br><legend><br>Emergency Contacts:</legend>
